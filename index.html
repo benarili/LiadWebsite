@@ -139,15 +139,17 @@
 contact me
 <br/>
 <br/>
- <form action="benarili@post.bgu.ac.il?subject=IGNORE" method="post" enctype="text/plain">
-  Email Adress:<br />
-  <input type="text" name="email_address" value="" maxlength="100" /><br />
-
-  Comments:<br />
-  <textarea rows="5" cols="20" name="comments"></textarea><br />
-
-  <input type="submit" value="Submit" />
-
+ <form action="mailto:benarili@post.bgu.ac.il" method="GET">
+  subject:</br>
+  <input name="subject" type="text" /></br>
+  cc:</br>
+  <input name="cc" type="email" /><br />
+  bcc:<br />
+  <input name="bcc" type="email" /><br />
+  body:<br/>
+  <textarea name="body"></textarea><br />
+  send:<br/>
+  <input type="submit" value="Send" />
  </form>
 <br/>
 </section>
