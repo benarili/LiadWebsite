@@ -1,7 +1,118 @@
-#menu
-{
+
+#menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	background-color: honeydew;
 	position: fixed;
+	top: 0;
 	width: 100%;
-	height: 35px;
-	background: white;
+}
+
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	color: forestgreen;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#playlist iframe {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -o-transform:rotate(20deg);
+    -ms-transform:rotate(20deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+}
+
+#photos{
+	alignment: center;
+	background-color: lightcyan;
+}
+
+#about p{
+    text-align: justify;
+    line-height: 1.8;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.05em;
+}
+body {
+	background-color: lightcyan;
+	alignment: center;
+}
+
+h1 {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+h2{
+    background-color: darkslategray;
+    color: white;
+    text-align: left;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: lavender;
+    color: brown;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+input[type=text] {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+contact form{
+    text-align: justify;
+    line-height: 1.8;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.8em;
 }
